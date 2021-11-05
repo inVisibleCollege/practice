@@ -1,0 +1,40 @@
+.container-1,
+.container-2,
+.container-3 {
+  border: 1px black solid;
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.flex-box-container-1,
+.flex-box-container-2,
+.flex-box-rps {
+  display: flex;
+  border: 1px solid black;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.flex-box-container-1 div {
+  display: flex;
+  padding: 10px;
+  border: solid black;
+  align-items: center;
+  margin: 10px;
+}
+/* shadow on image */
+.flex-box-container-2 img {
+  border: 1px solid green;
+  width: 20%;
+  height: 25%;
+  margin: 10px;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.7);
+}
+
+/* hover style*/
+.flex-box-rps img:hover {
+  box-shadow: 0px 10px 50px rgba(37, 50, 233, 1);
+}

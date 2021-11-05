@@ -1,0 +1,85 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="static/css.css" />
+    <title>JavaScript on Steriods</title>
+  </head>
+  <body>
+    <p id="date" date()>hello</p>
+    <div class="container-1">
+      <h2>Challenge 1: Your Age in Days</h2>
+      <div class="flex-box-container-1">
+        <div>
+          <button class="btn btn-primary" onclick="ageInDays()">
+            Click Me
+          </button>
+          <!--this is from the bootstape scr, i think a special type of class command, but it works -->
+        </div>
+        <div>
+          <button class="btn btn-danger" onclick="reset()">Reset</button>
+          <!--this is from the bootstape scr, i think a special type of class command, but it works -->
+        </div>
+      </div>
+      <div class="flex-box-container-1">
+        <div id="Flex-box-result"></div>
+      </div>
+    </div>
+    <div class="container-2">
+      <h2>Challenge 2: Cat Generator</h2>
+      <button
+        class="btn btn-success"
+        id="cat-generator-btn"
+        onclick="generateCat()"
+      >
+        Generate Cat
+      </button>
+      <div class="flex-box-container-2" id="flex-cat-gen"></div>
+      <!--insert images-->
+    </div>
+
+    <!--Challenge 3 -Rock, Paper, Scissors-->
+    <div class="container-3">
+      <h2>Challenge 3: Rock, Paper, Scissors</h2>
+      <div class="flex-box-rps" id="flex-box-rps-div">
+        <img
+          id="rock"
+          src="http://clipart-library.com/image_gallery/n756965.png"
+          height="150"
+          width="150"
+          onclick="rpsGame(this)"
+        />
+        <img
+          id="scissor"
+          src="https://media.istockphoto.com/vectors/scissor-icon-in-flat-style-vector-for-apps-ui-websites-black-icon-vector-id1159432526"
+          height="150"
+          width="150"
+          onclick="rpsGame(this)"
+        />
+        <img
+          id="paper"
+          src="https://cdn.pixabay.com/photo/2017/08/11/14/02/paper-2631126_960_720.jpg"
+          height="150"
+          width="150"
+          onclick="rpsGame(this)"
+        />
+      </div>
+      <div>
+        <button
+        class="btn btn-danger"
+        id="resetPRS"
+        onclick="Replay()"
+      >
+        Play Again
+      </button>  
+      </div>
+    </div>
+
+    <script src="static/js.js"></script>
+  </body>
+</html>
